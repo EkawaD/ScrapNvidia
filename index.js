@@ -1,7 +1,6 @@
 require("dotenv").config()
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const fs = require("fs")
 
 fs.readdir("./events/", (err, files) => {
