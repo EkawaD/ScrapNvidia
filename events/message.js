@@ -12,7 +12,6 @@ module.exports = (client, msg) => {
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
                 var response = JSON.parse(xhr.responseText);
-                
                 getNvidiaScrap(response, msg)
             }
         }
